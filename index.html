@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Exam 2 Problem</title>
+    <link rel="stylesheet" type="text/css" href="styles/Exam2problem.css"/>
+    <script src="js/Exam2problem.js"></script>
+</head>
+
+<body>
+    <h1>Exam 2 Problem</h1>
+    <hr>
+    <h3>What would you like to do today?</h3>
+    <select onchange="MenuChoice ()" id="menu">
+        <option>(Please select an option)</option>
+        <option>Display category list table</option>
+        <option>Add a product category to the category table</option>
+        <option>Change the description for a category</option>
+        <option>Delete a category from the database</option>
+        <option>About Me</option>
+    </select>
+    <hr>
+    <section id="categorytable" class="categorytable">
+        <button onclick="CategoryTable ()" id="category_table">Display Category Table</button>
+        <br>
+        <hr>
+        <label id="table_display">The category table will be displayed here.</label>
+    </section>
+    <br>
+    <section id="add" class="add">
+        <label>Please enter category name:</label>
+        <input type="text" id="category_name">
+        <br>
+        <label>Please enter category description:</label>
+        <input type="text" id="category_description">
+        <br>
+        <button onclick="AddCategory ()" id="add_category">Add Product Category</button>
+        <br>
+        <hr>
+        <label id="addresult">The operation's result will be displayed here.</label>
+    </section>
+    <br>
+    <section id="change" class="change">
+        <label>Please enter the category ID you would like to change:</label>
+        <input type="text" id="description_to_change">
+        <br>
+        <label>Please enter the new description you would like:</label>
+        <input type="text" id="change_description">
+        <br>
+        <button onclick="ChangeDescription ()" id="changedescript">Change Description</button>
+        <br>
+        <hr>
+        <label id="changeresult">The operation's result will be displayed here.</label>
+    </section>
+    <br>
+    <section id="delete" class="delete">
+        <label>Please enter the category ID you would like to delete:</label>
+        <input type="text" id="delete_category">
+        <br>
+        <button onclick="DeleteCategory ()" id="deletecat">Delete Category</button>
+        <br>
+        <hr>
+        <label id="deleteresult">The operation's result will be displayed here.</label>
+    </section>
+    <br>
+    <section id="me" class="me">
+        <h2>Hello! My name is Justin Patton, I am a senior marketing student at UAB.</h2>
+        <br>
+        <h3>I enjoy hiking and being outdoors.</h3>
+        <br>
+        <img src="images/grand canyon.jpg" id="grand_canyon">
+            <h3>I'm going on a trip to the Grand Canyon with my family in 6 weeks. I'm very excited about this trip because going to the Grand Canyon is on my bucket list! I hope to go back one day and hike all the way down to the bottom. </h3>
+    </section>
+    
+
+
+</body>
+</html>
